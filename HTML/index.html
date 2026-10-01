@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HTML Programs | WTIP Practical Programs</title><link rel="stylesheet" href="../assets/site.css"></head>
+<body>
+<header class="topbar"><a class="brand" href="../index.html">WTIP Practical Programs</a><nav><a href="../index.html">Home</a></nav></header>
+<section class="list-header"><div class="inner"><div style="font-size:38px">🌐</div><h1>HTML Programs</h1><p>HTML fundamentals, forms, media, semantic elements and more.</p></div></section>
+<main class="wrap"><input id="search" class="search" type="search" placeholder="Search programs..." aria-label="Search programs">
+<div class="list" id="programList"><article class="program" data-title="basic page">
+<div class="number">01</div><div><h3>Basic Page</h3><a class="open" href="1.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="lists example">
+<div class="number">02</div><div><h3>Lists Example</h3><a class="open" href="2.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="table example">
+<div class="number">03</div><div><h3>Table Example</h3><a class="open" href="3.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="images &amp; links">
+<div class="number">04</div><div><h3>Images &amp; Links</h3><a class="open" href="4.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="registration form">
+<div class="number">05</div><div><h3>Registration Form</h3><a class="open" href="5.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="audio and video webpage">
+<div class="number">06</div><div><h3>Audio and Video Webpage</h3><a class="open" href="6.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="iframe example">
+<div class="number">07</div><div><h3>IFrame Example</h3><a class="open" href="7.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="semantic example">
+<div class="number">08</div><div><h3>Semantic Example</h3><a class="open" href="8.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="html5 inputs">
+<div class="number">09</div><div><h3>HTML5 Inputs</h3><a class="open" href="9.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="college timetable">
+<div class="number">10</div><div><h3>College Timetable</h3><a class="open" href="10.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="css example">
+<div class="number">11</div><div><h3>CSS Example</h3><a class="open" href="11.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="css styling">
+<div class="number">12</div><div><h3>CSS Styling</h3><a class="open" href="12.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="responsive page">
+<div class="number">13</div><div><h3>Responsive Page</h3><a class="open" href="13.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="bootstrap example">
+<div class="number">14</div><div><h3>Bootstrap Example</h3><a class="open" href="14.html">Open Program →</a></div>
+</article>
+<article class="program" data-title="my portfolio">
+<div class="number">15</div><div><h3>My Portfolio</h3><a class="open" href="15.html">Open Program →</a></div>
+</article></div>
+<div id="empty" class="info" style="display:none">No matching programs found.</div>
+</main>
+<footer class="footer">HTML • CSS • JavaScript Practical Programs · M.N. Siddhartha Reddy · 250200267 · Section 5</footer>
+<script>
+const search=document.getElementById('search'), cards=[...document.querySelectorAll('.program')], empty=document.getElementById('empty');
+search.addEventListener('input',()=>{const q=search.value.toLowerCase().trim();let count=0;cards.forEach(c=>{const ok=c.dataset.title.includes(q);c.style.display=ok?'flex':'none';if(ok)count++;});empty.style.display=count?'none':'block';});
+</script></body></html>
