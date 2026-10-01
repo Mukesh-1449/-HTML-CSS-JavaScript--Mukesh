@@ -1,8 +1,8 @@
 # HTML, CSS & JavaScript Practical Programs
 
 ## Student Details
-- **Student Name:** M.N. Siddhartha Reddy
-- **Register Number:** 250200267
+- **Student Name:** J. Mukesh Kumar
+- **Register Number:** 250200580
 - **Class / Section:** Section 5
 - **Subject:** Web Technology and Internet Programming
 - **Assignment:** HTML, CSS & JavaScript Practical Programs Website
